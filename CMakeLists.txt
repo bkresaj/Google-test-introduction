@@ -18,8 +18,10 @@ enable_testing()
 add_executable(
   example_test
   #tests/assertion_tests.cpp
-  tests/test_fixture_example.cpp
+  #tests/test_fixture_example.cpp
+  tests/death_tests.cpp
 )
+
 target_link_libraries(
   example_test
   GTest::gtest_main
