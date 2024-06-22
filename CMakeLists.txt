@@ -17,7 +17,8 @@ enable_testing()
 
 add_executable(
   example_test
-  tests/test.cpp
+  #tests/assertion_tests.cpp
+  tests/test_fixture_example.cpp
 )
 target_link_libraries(
   example_test
