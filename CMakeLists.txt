@@ -19,7 +19,8 @@ add_executable(
   example_test
   #tests/assertion_tests.cpp
   #tests/test_fixture_example.cpp
-  tests/death_tests.cpp
+  #tests/death_tests.cpp
+  tests/parameterized_tests.cpp
 )
 
 target_link_libraries(
