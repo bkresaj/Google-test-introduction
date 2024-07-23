@@ -20,12 +20,14 @@ add_executable(
   #tests/assertion_tests.cpp
   #tests/test_fixture_example.cpp
   #tests/death_tests.cpp
-  tests/parameterized_tests.cpp
+  #tests/parameterized_tests.cpp
+  tests/mock_example1.cpp
 )
 
 target_link_libraries(
   example_test
   GTest::gtest_main
+  GTest::gmock
 )
 
 include(GoogleTest)
