@@ -21,7 +21,8 @@ add_executable(
   #tests/test_fixture_example.cpp
   #tests/death_tests.cpp
   #tests/parameterized_tests.cpp
-  tests/mock_example1.cpp
+  #tests/mock_example1.cpp
+  tests/mock_example2.cpp
 )
 
 target_link_libraries(
