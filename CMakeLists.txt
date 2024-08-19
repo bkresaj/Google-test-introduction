@@ -32,5 +32,20 @@ target_link_libraries(
   GTest::gmock
 )
 
+add_executable(
+  mock_reference1
+  tests/mock_reference1/user_service.cpp
+  tests/mock_reference1/ut_user_service.cpp
+)
+
+target_link_libraries(
+  mock_reference1
+  GTest::gtest_main
+  GTest::gmock
+)
+
+target_include_directories(mock_reference1 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/tests/mock_reference1)
+
 include(GoogleTest)
 gtest_discover_tests(example_test)
+gtest_discover_tests(mock_reference1)
